@@ -13,9 +13,3 @@ Execute these notebook within an ArcGIS Pro Python Notebook environment and in t
 4. 'BMSB_PostGis': This last notebook stores each resulting accuracy evaluations for each Huff model to a PostGIS, and the best model's ranked list of cities that need BMSB monitoring. (It also prints the geojson of each saved layer as a preview of what you will see on the web page created in google cloud run).
 These notebooks were executed 3 times where alpha = 2, alpha =1.75, alpha =1.5. Names of saved tables were changed and reflect the current alpha to distinguish it from other model results. After running and saving the resulting tables, we then executed "multi_geojson.py' within Google Cloud Run services to print the geojson layer for each Huff model simulation and ranked cities list. Please refer to the following link for more information on how to deploy google cloud run services
 
-Access the geojson for each run model and the ranked list of cities from:
-
-* https://bmsb-paqfpja6oq-uc.a.run.app/ranked_cities (No longer supported)
-* https://bmsb-paqfpja6oq-uc.a.run.app/model_alpha2 (No longer supported)
-* https://bmsb-paqfpja6oq-uc.a.run.app/model_alpha1_75 (No longer supported)
-* https://bmsb-paqfpja6oq-uc.a.run.app/model_alpha1_5 (No longer supported)
